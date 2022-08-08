@@ -9,7 +9,7 @@ const addDateSuffix = date => {
     // if else's for Date Suffix's
     if (lastChar === '1' && dateInput !== '11') {
         dateInput = `${dateInput}st`;
-    } else if (lastCar === '2' && dateInput !== '12') {
+    } else if (lastChar === '2' && dateInput !== '12') {
         dateInput = `${dateInput}nd`;
     } else if (lastChar === '3' && dateInput !== '13') {
         dateInput = `${dateInput}rd`;

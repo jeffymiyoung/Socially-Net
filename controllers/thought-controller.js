@@ -48,15 +48,15 @@ const ThoughtController = {
                 return User.findOneAndUpdate(
                     { _id: params.userId },
                     { $push: { thoughts: _id } },
-                    { new: true, runValidators: true }
+                    { new: true }
                 );
             })
             .then((dbThoughtData) => {
-                res.json(dbThoughtData);
+                res.json({ message: 'Thought Created' });
             })
             .catch((err) => {
                 console.log(err);
-                res.status(400).json(err);
+                res.json(err);
             });
     },
 
@@ -129,7 +129,7 @@ const ThoughtController = {
                 );
             })
             .then(dbUserData => {
-                res.json(dbdUserData);
+                res.json(dbUserData);
             })
             .catch((err) => {
                 console.log(err);
