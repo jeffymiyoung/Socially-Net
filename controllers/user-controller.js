@@ -14,7 +14,7 @@ const userController = {
             });
     },
 
-    // GET one user by ID
+    // GET single user by ID
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
             .populate({
