@@ -2,7 +2,7 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Description:
-
+* Socially Net is the newest API for a social network! Create a user profile, add friends, and create thoughts! Users can even create reactions upon other user's thoughts! Easy to use, and navigate as well!
 
 ## Tables of Contents:
 * [Technologies](#technologies)
@@ -28,15 +28,18 @@
 * [mongoose v6.5.1](https://www.npmjs.com/package/mongoose)
 
 ## Screenshot:
-* Screenshot:
 
-
+* GIF:
 
 ## Installation:
-
+* Download the provided zip folder from this repository!
+* Navigate to the root directory and run command: `npm i`
+* Once the download is finished, the application is ready to use!
 
 ## Usage:
-
+* Once the application is ready to use, run command: `npm start`
+* This will start the API and Database server!
+* Utilize [Insomnia](https://insomnia.rest/) to help display data and test endpoints/routes!
 
 ## Author(s):
 * Jeffrey Young
