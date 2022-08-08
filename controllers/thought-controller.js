@@ -82,7 +82,7 @@ const ThoughtController = {
 
     // PUT/UPDATE thought by ID
     updateThought({ params, body }, res) {
-        Thought.FindByIdAndUpdate({ _id: params.id }, body, {
+        Thought.findOneAndUpdate({ _id: params.id }, body, {
             new: true,
             runValidators: true
         })
@@ -100,19 +100,14 @@ const ThoughtController = {
     },
 
     // DELETE reaction 
-    deleteReaction({ params }, res) {
-        Thought.FindOneAndUpdate(
-            { _id: params.id },
-            { $pull: { reactions: { reactionId: params.reactionId } } },
+    deleteReaction({ params }, res){
+        Thought.findOneAndUpdate(
+            { _id: params.thoughtId },
+            { $pull: { reactions: {reactionId: params.reactionId }}},
             { new: true }
         )
-            .then((dbThoughtData) => {
-                res.json(dbThoughtData);
-            })
-            .catch((err) => {
-                console.log(err);
-                res.json(err);
-            });
+        .then(dbThoughtData => res.json(dbThoughtData))
+        .catch(err => res.json(err))
     },
 
     // DELETE thought by ID
@@ -124,7 +119,7 @@ const ThoughtController = {
                 }
                 return User.findOneAndUpdate(
                     { _id: params.id },
-                    { $pull: { thoughts: params.id }},
+                    { $pull: { thoughts: params.id } },
                     { new: true }
                 );
             })
