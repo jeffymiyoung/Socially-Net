@@ -29,7 +29,8 @@
 
 ## Screenshot:
 
-* GIF:
+* Demonstration Video:
+
 
 ## Installation:
 * Download the provided zip folder from this repository!
