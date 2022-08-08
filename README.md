@@ -30,6 +30,7 @@
 ## Screenshot:
 
 * Demonstration Video:
+(./assets/Socially-Net-Walk-Through-Tutorial.mp4)
 
 
 ## Installation:
