@@ -13,14 +13,14 @@ const {
 
 // Routes for Users
 router
-    .router('/')
+    .route('/')
     .get(getAllUsers)
     .post(createUser)
 ;
 
 // Routes for ID
 router
-    .router('/:id')
+    .route('/:id')
     .get(getUserById)
     .put(updateUser)
     .delete(deleteUser)
@@ -34,4 +34,4 @@ router
 ;
 
 // Export for External
-module.exprots = router;
+module.exports = router;
