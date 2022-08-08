@@ -30,7 +30,9 @@
 ## Screenshot:
 
 * Demonstration Video:
-(./assets/Socially-Net-Walk-Through-Tutorial.mp4)
+
+
+https://user-images.githubusercontent.com/98984804/183353796-9ddd32eb-39a4-4986-b17b-8ef2df2eab63.mp4
 
 
 ## Installation:
