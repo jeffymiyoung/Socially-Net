@@ -14,10 +14,18 @@
 * [Contact Info](#contact-info)
 
 ## Technologies:
+![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
+![image](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+![image](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+![image](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ## NPM Packages:
+* [express v4.18.1](https://www.npmjs.com/package/express)
 
+* [mongoose v6.5.1](https://www.npmjs.com/package/mongoose)
 
 ## Screenshot:
 * Screenshot:
